@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Sheldons Uni work\\COMPUTER SCIENCE\\YEAR 2\\PROG6221\\POE PART 1\\PROG6221-POE-Part-1\\ChatBox_Interaction_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}|ChatBox_Interaction_System.csproj|c:\\sheldons uni work\\computer science\\year 2\\prog6221\\poe part 1\\prog6221-poe-part-1\\chatbox_interaction_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}|ChatBox_Interaction_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Sheldons Uni work\\COMPUTER SCIENCE\\YEAR 2\\PROG6221\\POE PART 1\\PROG6221-POE-Part-1\\ChatBox_Interaction_System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Sheldons Uni work\\COMPUTER SCIENCE\\YEAR 2\\PROG6221\\POE PART 1\\PROG6221-POE-Part-1\\ChatBox_Interaction_System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T14:47:31.252Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
