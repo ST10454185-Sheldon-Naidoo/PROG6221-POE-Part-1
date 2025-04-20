@@ -1,0 +1,9 @@
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\bin\Debug\Chatbox_Interaction_System.exe.config
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\bin\Debug\Chatbox_Interaction_System.exe
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\bin\Debug\Chatbox_Interaction_System.pdb
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\obj\Debug\Chatbox_Interaction_System.csproj.AssemblyReference.cache
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\obj\Debug\Chatbox_Interaction_System.csproj.CoreCompileInputs.cache
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\obj\Debug\Chatbox_Interaction_System.exe
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\obj\Debug\Chatbox_Interaction_System.pdb
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\bin\Debug\Resources\Chatbot_Greeting.wav
+C:\Sheldons Uni work\COMPUTER SCIENCE\YEAR 2\PROG6221\POE PART 1\PROG6221-POE-Part-1\Chatbox_Interaction_System\bin\Debug\Resources\ascii-text-art.jpg

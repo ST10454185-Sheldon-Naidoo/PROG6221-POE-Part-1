@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatBox_Interaction_System", "ChatBox_Interaction_System.csproj", "{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbox_Interaction_System", "Chatbox_Interaction_System.csproj", "{35C6B192-5510-4AF0-9E71-3C3C56C0356B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{184E89D0-DEC9-4E90-AE7D-F84599FCE5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C6B192-5510-4AF0-9E71-3C3C56C0356B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C6B192-5510-4AF0-9E71-3C3C56C0356B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C6B192-5510-4AF0-9E71-3C3C56C0356B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C6B192-5510-4AF0-9E71-3C3C56C0356B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BA3ADBBA-2702-4A31-A35A-2090EB537FFD}
+		SolutionGuid = {384B120E-D94E-432F-8B39-44DA434817E7}
 	EndGlobalSection
 EndGlobal

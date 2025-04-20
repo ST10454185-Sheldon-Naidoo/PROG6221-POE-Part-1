@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ChatBox_Interaction_System")]
+[assembly: AssemblyTitle("Chatbox_Interaction_System")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ChatBox_Interaction_System")]
+[assembly: AssemblyProduct("Chatbox_Interaction_System")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("184e89d0-dec9-4e90-ae7d-f84599fce5f9")]
+[assembly: Guid("35c6b192-5510-4af0-9e71-3c3c56c0356b")]
 
 // Version information for an assembly consists of the following four values:
 //
