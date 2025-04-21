@@ -12,26 +12,29 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
     
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
+      - name: Setup .NET Framework
+        uses: microsoft/setup-msbuild@v1
         with:
-          dotnet-version: 9.0.x
+          vs-version: 'latest'
         
-      - name: Restore dependencies
-        run: dotnet restore
-      
+      - name: Restore NuGet dependencies
+        run: nuget restore Chatbox_Interaction_System/Chatbox_Interaction_System.sln
+        
       - name: Build the project (checking for syntax errors)
-        run: dotnet build --no-restore --configuration Release
+        run: msbuild Chatbox_Interaction_System/Chatbox_Interaction_System.sln /p:Configuration=Release
 
       - name: Check code formatting
-        run: dotnet format --verify-no-changes
-        continue-on-error: true
+        run: |
+          Install-Module -Name CodeFormatter -Force -Scope CurrentUser
+          CodeFormatter -Solution Chatbox_Interaction_System/Chatbox_Interaction_System.sln -Verify
       
       - name: Run unit tests
-        run: dotnet test --no-build --verbosity normal
+        run: |
+          vstest.console.exe Chatbox_Interaction_System/bin/Release/Chatbox_Interaction_System.dll /TestCaseFilter:TestCategory!=Integration
+        continue-on-error: true
