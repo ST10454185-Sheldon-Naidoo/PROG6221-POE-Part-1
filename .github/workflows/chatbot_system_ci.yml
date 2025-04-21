@@ -15,23 +15,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-    - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
     
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 9.0.x
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
         
-    - name: Restore dependencies
-      run: dotnet restore
+      - name: Restore dependencies
+        run: dotnet restore
       
-    - name: Build the project (checking for syntax errors)
-      run: dotnet build --no-restore -- configuration Release
+      - name: Build the project (checking for syntax errors)
+        run: dotnet build --no-restore --configuration Release
 
-    - name: Check code formatting
-      run: dotnet format --verify-no-changes
-      continue-on-error: true
+      - name: Check code formatting
+        run: dotnet format --verify-no-changes
+        continue-on-error: true
       
-    - name: Run unit tests
-      run: dotnet test --no-build --verbosity normal
+      - name: Run unit tests
+        run: dotnet test --no-build --verbosity normal
