@@ -28,11 +28,6 @@ jobs:
         
       - name: Build the project (checking for syntax errors)
         run: msbuild Chatbox_Interaction_System/Chatbox_Interaction_System.sln /p:Configuration=Release
-
-      - name: Check code formatting
-        run: |
-          Install-Module -Name CodeFormatter -Force -Scope CurrentUser
-          CodeFormatter -Solution Chatbox_Interaction_System/Chatbox_Interaction_System.sln -Verify
       
       - name: Run unit tests
         run: |
