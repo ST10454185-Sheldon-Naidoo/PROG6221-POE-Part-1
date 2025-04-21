@@ -64,6 +64,23 @@ namespace ChatBox_Interaction_System
 
         static void AudioGreeting()
         {
+            string greeting = "Hello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.";
+            SoundPlayer audio = new SoundPlayer(@"Resources\Chatbot_Greeting.wav");
+
+            Thread audioThread = new Thread(() =>
+            {
+                try
+                {
+                    //audio.Load();
+                    audio.PlaySync();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Audio playback error: " + ex.Message);
+                }
+            });
+
+            /*
             try
             {
                 SoundPlayer audio = new SoundPlayer(@"Resources\Chatbot_Greeting.wav");
@@ -74,6 +91,20 @@ namespace ChatBox_Interaction_System
             {
                 Console.WriteLine("Audio playback error: " + ex.Message);
             }
+            */
+
+            Thread textThread = new Thread(() =>
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                TypeWithEffect(greeting, 62);
+                Console.ResetColor();
+            });
+
+            audioThread.Start();
+            textThread.Start();
+
+            audioThread.Join();
+            textThread.Join();
         }
 
         static void ClearAndShowWelcome()
