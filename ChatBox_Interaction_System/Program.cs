@@ -11,6 +11,18 @@ namespace ChatBox_Interaction_System
 {
     class Program
     {
+        // Code Attribution
+        // This method was adapted from Dotnetstuffs
+        // https://www.dotnetstuffs.com/use-of-application-enablevisualstyles-csharp/
+        // Dotnetstuffs
+
+        // Code Attribution 
+        // This method was adapted from Stack Overflow
+        // https://stackoverflow.com/questions/21145770/background-color-foregroundcolor
+        // Adam Modlin
+        // https://stackoverflow.com/users/1403592/adam-modlin
+
+        // Attribute needed to allow the windows form to run properly (Single-Threaded Apartment mode is required to use windows related applications)
         [STAThread]
         static void Main()
         {
@@ -34,11 +46,40 @@ namespace ChatBox_Interaction_System
             Console.ReadKey();
         }
 
+
         static void ShowASCIIImage()
         {
+            // Code Attribution
+            // This method was adapted from Dotnetstuffs
+            // https://www.dotnetstuffs.com/use-of-application-enablevisualstyles-csharp/
+            // Dotnetstuffs
+
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.dockstyle?view=windowsdesktop-9.0
+            // Microsoft Learn
+
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image.fromfile?view=windowsdesktop-9.0
+            // Microsoft Learn
+
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.application.enablevisualstyles?view=windowsdesktop-9.0
+            // Microsoft Learn
+
+            // Code Attribution 
+            // This method was adapted from W3Schools
+            // https://www.w3schools.com/cs/cs_exceptions.php
+            // W3Schools
+
             try
             {
+                // Addition of modern visual styles for the windows form
                 Application.EnableVisualStyles();
+
+                // Addition of controls for rendering text
                 Application.SetCompatibleTextRenderingDefault(false);
 
                 // Set up of a new windows form for the image to display separately from the main application
@@ -59,6 +100,7 @@ namespace ChatBox_Interaction_System
                     Dock = DockStyle.Fill
                 };
 
+                // Gets collection of controls for the the form
                 imageForm.Controls.Add(pictureBox);
                 Application.Run(imageForm);
             }
@@ -72,6 +114,21 @@ namespace ChatBox_Interaction_System
 
         static void AudioGreeting()
         {
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.media.soundplayer?view=windowsdesktop-9.0
+            // Microsoft Learn
+
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread?view=net-9.0
+            // Microsoft Learn
+
+            // Code Attribution 
+            // This method was adapted from W3Schools
+            // https://www.w3schools.com/cs/cs_exceptions.php
+            // W3Schools
+
             string greeting = "Hello! Welcome to the Cybersecurity Awareness Bot. I'm here to help you stay safe online.";
             SoundPlayer audio = new SoundPlayer(@"Resources\Chatbot_Greeting.wav");
 
@@ -105,8 +162,14 @@ namespace ChatBox_Interaction_System
             textThread.Join();
         }
 
+
         static void WelcomeTitle()
         {
+            // Code Attribution
+            // This method was adapted from Geeksforgeeks
+            // https://www.geeksforgeeks.org/console-resetcolor-method-in-c-sharp/
+            // Geeksforgeeks
+
             // Welcome message for the application
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -118,8 +181,14 @@ namespace ChatBox_Interaction_System
             Console.ResetColor();
         }
 
+
         static string AskUserName()
         {
+            // Code Attribution
+            // This method was adapted from Geeksforgeeks
+            // https://www.geeksforgeeks.org/console-resetcolor-method-in-c-sharp/
+            // Geeksforgeeks
+
             // Method that takes the input name of the user
             Console.Write("\nWhat is your name? ");
             string name = Console.ReadLine();
@@ -129,9 +198,31 @@ namespace ChatBox_Interaction_System
             return name;
         }
 
+
         static void ChatboxInteraction(string userName)
         {
-            Console.ForegroundColor= ConsoleColor.Yellow;
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/api/system.console.resetcolor?view=net-9.0
+            // Microsoft Learn
+
+            // Code Attribution
+            // This method was adapted from Microsoft Learn
+            // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements
+            // Microsoft Learn
+
+            // Code Attribution 
+            // This method was adapted from Stack Overflow
+            // https://stackoverflow.com/questions/68578/multiple-cases-in-switch-statement
+            // Peter Mortensen
+            // https://stackoverflow.com/users/63550/peter-mortensen
+
+            // Code Attribution 
+            // This method was adapted from W3Schools
+            // https://www.w3schools.com/cs/cs_while_loop.php
+            // W3Schools
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nYou can ask chatbot any of the following questions.");
             Console.WriteLine("Type any of the questions below: ");
             Console.WriteLine("\n- How are you?");
@@ -144,9 +235,10 @@ namespace ChatBox_Interaction_System
             Console.WriteLine("\nType 'exit' to close the application.");
             Console.ResetColor();
 
+            // While Loop
             while (true)
             {
-                Console.ForegroundColor= ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("\nYou: ");
                 string input = Console.ReadLine()?.Trim().ToLower();    // Each input value will be change to lowercase so that any input both upper or lower case will be accepted
                 Console.ResetColor();
@@ -155,7 +247,7 @@ namespace ChatBox_Interaction_System
                 if (string.IsNullOrWhiteSpace(input))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Bot: You didn't type anything. Please re-enter a question or type 'exit'.");
+                    TextEffect("Bot: You didn't type anything. Please re-enter a question or type 'exit'.");
                     Console.ResetColor();
                     continue;
                 }
@@ -189,8 +281,8 @@ namespace ChatBox_Interaction_System
                         break;
 
 
-                    case "what can I ask you about":
-                    case "what can I ask you about?":
+                    case "what can i ask you about":
+                    case "what can i ask you about?":
                         TextEffect("Bot: You can ask me about information based on password safety, phishing or safe browsing tips.");
                         break;
 
@@ -228,14 +320,21 @@ namespace ChatBox_Interaction_System
             }
         }
 
+
         static void PrintDivider()
         {
             Console.WriteLine(new string('=', 60));
         }
 
+
         // Method to allow the text to run automatically
         static void TextEffect(string message, int delay = 30)
         {
+            // Code Attribution 
+            // This method was adapted from W3Schools
+            // https://www.w3schools.com/cs/cs_foreach_loop.php
+            // W3Schools
+
             foreach (char c in message)
             {
                 Console.Write(c);
