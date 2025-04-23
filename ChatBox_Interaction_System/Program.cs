@@ -214,7 +214,7 @@ namespace ChatBox_Interaction_System
             Console.Write("\nWhat is your name? ");
             string name = Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            TextEffect($"Nice to meet you, {name}! I am available to assist you in staying safe online.");
+            TextEffect($"Chatbot: Nice to meet you, {name}! I am available to assist you in staying safe online.");
             Console.ResetColor();
             return name;
         }
@@ -259,8 +259,8 @@ namespace ChatBox_Interaction_System
             // While Loop
             while (true)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\nYou: ");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write($"\n{userName}: ");
 
                 // Input Validation
                 string input = Console.ReadLine()?.Trim().ToLower();    // Each input value will be change to lowercase so that any input both upper or lower case will be accepted
@@ -271,7 +271,7 @@ namespace ChatBox_Interaction_System
                 if (string.IsNullOrWhiteSpace(input))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    TextEffect("Bot: You didn't type anything. Please re-enter a question or type 'exit'.");
+                    TextEffect("Chatbot: You didn't type anything. Please re-enter a question or type 'exit'.");
                     Console.ResetColor();
                     continue;
                 }
@@ -279,7 +279,7 @@ namespace ChatBox_Interaction_System
                 if (input == "exit")
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    TextEffect("\nGoodbye! Stay safe online, " + userName + "!");
+                    TextEffect("\nChatbot: Goodbye! Stay safe online, " + userName + "!");
                     Console.ResetColor();
                     break;
                 }
@@ -291,7 +291,7 @@ namespace ChatBox_Interaction_System
                 {
                     case "how are you":
                     case "how are you?":
-                        TextEffect("Bot: I am fully operational and ready to assist you.");
+                        TextEffect("Chatbot: I am fully operational and ready to assist you.");
                         break;
 
 
@@ -301,44 +301,44 @@ namespace ChatBox_Interaction_System
                     case "what's your purpose?":
                     case "whats your purpose":
                     case "whats your purpose?":
-                        TextEffect("Bot: My purpose is to raise cybersecurity awareness, help in avoiding online threats and protect you as you browse online.");
+                        TextEffect("Chatbot: My purpose is to raise cybersecurity awareness, help in avoiding online threats and protect you as you browse online.");
                         break;
 
 
                     case "what can i ask you about":
                     case "what can i ask you about?":
-                        TextEffect("Bot: You can ask me about information based on password safety, phishing or safe browsing tips.");
+                        TextEffect("Chatbot: You can ask me about information based on password safety, phishing or safe browsing tips.");
                         break;
 
 
                     case "can you help me":
                     case "can you help me?":
-                        TextEffect("Bot: Of course. My primary design is to spread awareness about cybersecurity and assist you in browsing online safely.");
+                        TextEffect("Chatbot: Of course. My primary design is to spread awareness about cybersecurity and assist you in browsing online safely.");
                         break;
 
 
                     case "password safety":
                     case "password safety?":
-                        TextEffect("Bot: Try to use long, unique passwords to reduce password theft and enable two-factor authentication to enhance your password security.");
+                        TextEffect("Chatbot: Try to use long, unique passwords to reduce password theft and enable two-factor authentication to enhance your password security.");
                         break;
 
 
                     case "phishing":
                     case "phishing?":
-                        TextEffect("Bot: Be cautious of any unsolicited messages that are sent directly to you. Avoid clicking on any suspicious links.");
+                        TextEffect("Chatbot: Be cautious of any unsolicited messages that are sent directly to you. Avoid clicking on any suspicious links.");
                         break;
 
 
                     case "safe browsing":
                     case "safe browsing?":
-                        TextEffect("Bot: Regularly update your web browser with new patches and avoid browsing through unfamiliar/untrusted websites.");
+                        TextEffect("Chatbot: Regularly update your web browser with new patches and avoid browsing through unfamiliar/untrusted websites.");
                         break;
 
 
                     // Input Validation
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
-                        TextEffect("Bot: I didn't quite understand that. Could you rephrase?");
+                        TextEffect("Chatbot: I didn't quite understand that. Could you rephrase?");
                         break;
                 }
                 Console.ResetColor();
