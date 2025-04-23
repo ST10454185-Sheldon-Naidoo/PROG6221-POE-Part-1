@@ -137,7 +137,7 @@ namespace ChatBox_Interaction_System
             {
                 try
                 {
-                    //audio.Load();
+                    audio.Load();
                     audio.PlaySync();
                 }
                 catch (Exception ex)
@@ -162,6 +162,24 @@ namespace ChatBox_Interaction_System
             textThread.Join();
         }
 
+        static void DisplayASCIIArtBanner()
+        {
+            SpaceDivider();
+            string asciiArt = @"
+        ░█▀▀░█░█░█▀▄░█▀▀░█▀▄░█▀▀░█▀▀░█▀▀░█░█░█▀▄░▀█▀░▀█▀░█░█
+        ░█░░░░█░░█▀▄░█▀▀░█▀▄░▀▀█░█▀▀░█░░░█░█░█▀▄░░█░░░█░░░█░
+        ░▀▀▀░░▀░░▀▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░░▀░░░▀░
+        ░█▀█░█░█░█▀█░█▀▄░█▀▀░█▀█░█▀▀░█▀▀░░░█▀▄░█▀█░▀█▀  
+        ░█▀█░█▄█░█▀█░█▀▄░█▀▀░█░█░█▀▀░▀▀█░░░█▀▄░█░█░░█░  
+        ░▀░▀░▀░▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░░░▀▀░░▀▀▀░░▀░
+";
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(asciiArt);
+            Console.ResetColor();
+            SpaceDivider();
+        }
+
+
 
         static void WelcomeTitle()
         {
@@ -178,8 +196,11 @@ namespace ChatBox_Interaction_System
             Console.WriteLine("Welcome to the Cybersecurity Awareness Bot");
             PrintDivider();
 
+            DisplayASCIIArtBanner();
+
             Console.ResetColor();
         }
+
 
 
         static string AskUserName()
@@ -240,9 +261,12 @@ namespace ChatBox_Interaction_System
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("\nYou: ");
+
+                // Input Validation
                 string input = Console.ReadLine()?.Trim().ToLower();    // Each input value will be change to lowercase so that any input both upper or lower case will be accepted
                 Console.ResetColor();
 
+                // Input Validation
                 // If statements are used for the exitting of the application
                 if (string.IsNullOrWhiteSpace(input))
                 {
@@ -311,6 +335,7 @@ namespace ChatBox_Interaction_System
                         break;
 
 
+                    // Input Validation
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
                         TextEffect("Bot: I didn't quite understand that. Could you rephrase?");
@@ -324,6 +349,11 @@ namespace ChatBox_Interaction_System
         static void PrintDivider()
         {
             Console.WriteLine(new string('=', 60));
+        }
+
+        static void SpaceDivider()
+        {
+            Console.WriteLine(new string('-', 60));
         }
 
 
