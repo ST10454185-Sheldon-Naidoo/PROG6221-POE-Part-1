@@ -353,7 +353,7 @@ namespace ChatBox_Interaction_System
 
         static void SpaceDivider()
         {
-            Console.WriteLine(new string('-', 60));
+            Console.WriteLine(new string('*', 60));
         }
 
 
